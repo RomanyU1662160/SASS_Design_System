@@ -1,0 +1,203 @@
+/*
+* @author  Romany Sefen
+*/
+
+/*=============================================
+=            Table of Contents            =
+=============================================*/
+/*----------  Colors  ----------*/
+/*----------  Fonts  ----------*/
+/*----------  Typography  ----------*/
+/*----------  Breakpoints  ----------*/
+
+/*=====  End of Table of Contents  ======*/
+
+/*=============================================
+=            Design system brand name- (eg. brandName)          =
+=============================================*/
+// adding "!" to the comment to view it in the css output and the comprised css code
+/* !@rds = Romany Sefen Design System */
+$ds: "rds"; // Romany Sefen Design System
+
+/*=============================================
+        =            colors            =
+=============================================*/
+
+/*----------  Neutral colors  ----------*/
+$green: #5ece7b;
+$green-light: #9ee2b0;
+$green-dark: #3a9d6e;
+
+$blue: #5d9cec;
+$blue-light: #8eb9f1;
+$blue-dark: #3a7bd6;
+
+$red: #ec5d71;
+$red-light: #f18e9e;
+$red-dark: #d63a66;
+
+$black: #111;
+$black-light: #333;
+$black-dark: #000;
+
+$yellow: #eacc53;
+$yellow-light: #f1e38e;
+$yellow-dark: #9e7c25;
+
+$white: #fff;
+$white-dark: #f5f5f5;
+
+$gray: #999;
+$gray-light: #ccc;
+$gray-lighter: #fdfdfd;
+$gray-dark: #666;
+
+$dark: #333;
+$dark-light: #666;
+$dark-lighter: #999;
+$dark-lightest: #ccc;
+
+/*----------  Brand colors  ----------*/
+
+$primary: $blue;
+$primary-light: $blue-light;
+$primary-dark: $blue-dark;
+
+$secondary: $gray-light;
+$secondary-light: $gray-lighter;
+$secondary-dark: $gray-dark;
+
+$success: $green;
+$success-light: $green-light;
+$success-dark: $green-dark;
+
+$info: $blue;
+$info-light: $blue-light;
+$info-dark: $blue-dark;
+
+$danger: $red;
+$danger-light: $red-light;
+$danger-dark: $red-dark;
+
+$warning: $yellow;
+$warning-light: $yellow-light;
+$warning-dark: $yellow-dark;
+
+$dark: $dark;
+$dark-light: $dark-light;
+$dark-dark: $dark;
+
+/*=============================================
+    =            Typography            =
+=============================================*/
+/*
+#1 - Font families playfair, will be used for the headings and titles
+        https://fonts.google.com/specimen/Playfair+Display
+#2 - Font families raleway, will be used for the body text
+        https://fonts.google.com/specimen/Raleway
+*/
+
+/*----------  Fonts  ----------*/
+$playfair: "Playfair Display", serif; // #1
+$raleway: "Raleway", sans-serif; // #2
+$font-family-sans-serif: "Open Sans", "Helvetica Neue", helvetica, arial,
+  sans-serif;
+$font-family-base: $font-family-sans-serif;
+$font-family-serif: georgia, "Times New Roman", times, serif;
+$font-family-monospace: menlo, monaco, consolas, "Courier New", monospace;
+
+/*=============================================
+=            font-headings            =
+=============================================*/
+$h-1: 1.5rem; // ~24px
+$h-2: 1.25rem; // ~20px
+$h-3: 1.125rem; // ~18px
+$h-4: 1rem; // ~16px
+$h-5: 0.875rem; // ~14px
+$h-6: 0.75rem; // ~12px
+
+/*----------  Font sizes  ----------*/
+$fs-base: 1rem;
+$fs-large: ceil(($fs-base + 0.5rem)); // ~20px
+$fs-xl: ceil(($fs-base + 1rem)); // ~24px
+$fs-small: 0.5rem; // ~12px
+$fs-xs: 0.75rem; // ~10px
+$fs-xxs: 0.8rem; // ~8px
+
+/*----------  Font weights  ----------*/
+$fw-light: 300;
+$fw-normal: 400;
+$fw-medium: 500;
+$fw-semi-bold: 600;
+$fw-bold: 700;
+$fw-extra-bold: 800;
+$fw-black: 900;
+
+/*----------  Line heights  ----------*/
+$lh-base: 1.5;
+$lh-large: 1.6;
+$lh-small: 1.4;
+
+/*=============================================
+=            Padding sizes            =
+=============================================*/
+$default-btn-padding: 0.5rem;
+$tiny-btn-padding: 0.5rem 1rem;
+$small-btn-padding: 0.75rem 1.25rem;
+$medium-btn-padding: 1rem 1.5rem;
+$large-btn-padding: 1.25rem 1.75rem;
+$xlarge-btn-padding: 1.5rem 2rem;
+$xxlarge-btn-padding: 1.75rem 2.25rem;
+
+/*=============================================
+    =            Breakpoints            =
+=============================================*/
+$breakpoints: (
+  "xs": 0,
+
+  "sm": 576px,
+
+  "md": 768px,
+
+  "lg": 992px,
+
+  "xl": 1200px,
+
+  "xxl": 1400px,
+);
+
+$devices: (
+  "mobile": 576rem,
+  "tablet": 768px,
+  "desktop": 992px,
+  "large-desktop": 1200px,
+);
+
+/*=============================================
+    =            Grid            =  
+=============================================*/
+$grid-columns: 12;
+$grid-gutter-width: 1.5rem;
+$grid-breakpoints: (
+  "xs": 0,
+  "sm": 576px,
+  "md": 768px,
+  "lg": 992px,
+  "xl": 1200px,
+  "xxl": 1400px,
+);
+
+/*=============================================
+=            Spacing            =
+=============================================*/
+$spaces: (
+  "xxs": 0.25rem,
+  "xs": 0.5rem,
+  "sm": 0.75rem,
+  "md": 1rem,
+  "lg": 1.25rem,
+  "xl": 1.5rem,
+  "xxl": 2rem,
+  "xxxl": 2.5rem,
+  "xxxxl": 3rem,
+);

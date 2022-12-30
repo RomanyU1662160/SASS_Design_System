@@ -1,0 +1,161 @@
+/*=============================================
+=            Button Mixins            =
+=============================================*/
+
+/**
+ *
+ * The file include all the mixins to style buttons, such as btn, btn-outline, btn-link, btn-primary etc.
+ *
+ */
+/*=====  End of Button Mixins  ======*/
+
+/*=============================================
+=  Buttons  default sizes(tiny-small-large)  = 
+=============================================*/
+$tiny: var(--btn-tiny, "tiny") !default;
+$small: var(--btn-small, "small") !default;
+$medium: var(--btn-medium, "medium") !default;
+$large: var(--btn-large, "large") !default;
+$xlarge: var(--btn-xlarge, "xlarge") !default;
+$xxlarge: var(--btn-xxlarge, "xxlarge") !default;
+
+@mixin btn($size) {
+  border: 1px solid $gray-light;
+
+  @if $size ==$tiny {
+    padding: $tiny-btn-padding;
+  } @else if $size ==$small {
+    padding: $small-btn-padding;
+  } @else if $size ==$medium {
+    padding: $medium-btn-padding;
+  } @else if $size ==$large {
+    padding: $large-btn-padding;
+  } @else if $size ==$xlarge {
+    padding: $xLarge-btn-padding;
+  } @else if $size ==$xxlarge {
+    padding: $xxLarge-btn-padding;
+  } @else {
+    padding: $default-btn-padding;
+  }
+}
+
+@mixin btn-style(
+  $text-color,
+  $bg-color,
+  $hover-text-color,
+  $hover-bg-color,
+  $visited-text-color,
+  $visited-bg-color,
+  $active-text-color,
+  $active-bg-color
+) {
+  background-color: $bg-color;
+  border: 1px solid $text-color;
+  color: $text-color;
+
+  &:hover {
+    background-color: $hover-bg-color;
+    color: $hover-text-color;
+  }
+
+  &:active {
+    background-color: $active-bg-color;
+    color: $active-text-color;
+  }
+
+  &:visited {
+    background-color: $visited-bg-color;
+    color: $visited-text-color;
+  }
+}
+
+@mixin btn-primary() {
+  @include btn-style(
+    $btn-primary-text-color,
+    $btn-primary-bg,
+    $btn-primary-hover-text-color,
+    $btn-primary-hover-bg,
+    $btn-primary-visited-text-color,
+    $btn-primary-visited-bg,
+    $btn-primary-active-text-color,
+    $btn-primary-active-bg
+  );
+}
+
+@mixin btn-secondary() {
+  @include btn-style(
+    $btn-secondary-text-color,
+    $btn-secondary-bg,
+    $btn-secondary-hover-text-color,
+    $btn-secondary-hover-bg,
+    $btn-secondary-visited-text-color,
+    $btn-secondary-visited-bg,
+    $btn-secondary-active-text-color,
+    $btn-secondary-active-bg
+  );
+}
+
+@mixin btn-success() {
+  @include btn-style(
+    $btn-success-text-color,
+    $btn-success-bg,
+    $btn-success-hover-text-color,
+    $btn-success-hover-bg,
+    $btn-success-visited-text-color,
+    $btn-success-visited-bg,
+    $btn-success-active-text-color,
+    $btn-success-active-bg
+  );
+}
+
+@mixin btn-warning() {
+  @include btn-style(
+    $btn-warning-text-color,
+    $btn-warning-bg,
+    $btn-warning-hover-text-color,
+    $btn-warning-hover-bg,
+    $btn-warning-visited-text-color,
+    $btn-warning-visited-bg,
+    $btn-warning-active-text-color,
+    $btn-warning-active-bg
+  );
+}
+
+@mixin btn-danger() {
+  @include btn-style(
+    $btn-danger-text-color,
+    $btn-danger-bg,
+    $btn-danger-hover-text-color,
+    $btn-danger-hover-bg,
+    $btn-danger-visited-text-color,
+    $btn-danger-visited-bg,
+    $btn-danger-active-text-color,
+    $btn-danger-active-bg
+  );
+}
+
+@mixin btn-info() {
+  @include btn-style(
+    $btn-info-text-color,
+    $btn-info-bg,
+    $btn-info-hover-text-color,
+    $btn-info-hover-bg,
+    $btn-info-visited-text-color,
+    $btn-info-visited-bg,
+    $btn-info-active-text-color,
+    $btn-info-active-bg
+  );
+}
+
+@mixin btn-dark() {
+  @include btn-style(
+    $btn-dark-text-color,
+    $btn-dark-bg,
+    $btn-dark-hover-text-color,
+    $btn-dark-hover-bg,
+    $btn-dark-visited-text-color,
+    $btn-dark-visited-bg,
+    $btn-dark-active-text-color,
+    $btn-dark-active-bg
+  );
+}

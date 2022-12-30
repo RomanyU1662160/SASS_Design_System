@@ -1,0 +1,28 @@
+@import "../variables";
+
+// unquote is used to remove the quotes from the string and concat is used to concatenate the string
+
+/**
+ *
+ * example of usage
+    * @include addMargin("top", "md")
+ *
+ */
+
+@mixin add-margin($target, $space) {
+  @if map-has-key($spaces, $space) {
+    $value: unquote("margin" + $target) + ":" + map-get($spaces, $space);
+    @content;
+  } @else {
+    @error 'No #{$space} space found in $spaces map.';
+  }
+}
+
+@mixin add-padding($target, $space) {
+  @if (map-has-key($spaces, $space)) {
+    $value: unquote("padding" + $target) + ":" + map-get($spaces, $space);
+    @content;
+  } @else {
+    @error 'No #{$space} space found in $spaces map.';
+  }
+}

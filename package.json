@@ -1,0 +1,42 @@
+{
+  "name": "@romany/designsystem",
+  "version": "1.0.0",
+  "description": "Romany SASS Design System ",
+  "main": "./src/global.scss",
+  "scripts": {
+    "test": "echo \"Error: no test specified\"",
+    "precommit": "lint-staged",
+    "stylelint:scss": "npx stylelint \"**/*.scss\" --fix",
+    "stylelint:css": "npx stylelint \"**/*.css\" --fix",
+    "lint:fix": "npm run stylelint:scss && npm run stylelint:css",
+    "prepare": "husky install",
+    "build": "node src/scripts/build.js"
+  },
+  "keywords": [
+    "romany",
+    "sass",
+    "design-system"
+  ],
+  "author": "@RomanySefen",
+  "license": "ISC",
+  "dependencies": {
+    "css-reset-and-normalize": "^2.3.6",
+    "node-sass": "^8.0.0"
+  },
+  "devDependencies": {
+    "husky": "^8.0.0",
+    "lint-staged": "^13.1.0",
+    "prettier": "^2.8.1",
+    "stylelint": "^14.16.0",
+    "stylelint-config-prettier": "^9.0.4",
+    "stylelint-config-sass-guidelines": "^9.0.1",
+    "stylelint-config-standard": "^29.0.0",
+    "stylelint-prettier": "^2.0.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "pre-push": "lint-staged"
+    }
+  }
+}

@@ -1,0 +1,35 @@
+/*=============================================
+=            Foundation - Typography            =
+=============================================*/
+
+/*=============================================
+    =            Body Font Sizes            =
+=============================================*/
+$body-font-size: var(--ds-body-font-size, $fs-base) !default;
+$body-font-weight: var(--ds-body-font-weight, $fw-normal) !default;
+$body-line-height: var(--ds-body-line-height, $lh-base) !default;
+$body-font-family: var(--ds-body-font-family, $font-family-sans-serif) !default;
+$body-font-family-monospace: var(
+  --ds-body-font-family-monospace,
+  $font-family-monospace
+) !default;
+
+/*=============================================
+    =           Headers Font sizes           =
+=============================================*/
+$h1-font-size: var(--ds-h1-font-size, $h-1) !default;
+$h2-font-size: var(--ds-h2-font-size, $h-2) !default;
+$h3-font-size: var(--ds-h3-font-size, $h-3) !default;
+$h4-font-size: var(--ds-h4-font-size, $h-4) !default;
+$h5-font-size: var(--ds-h5-font-size, $h-5) !default;
+$h6-font-size: var(--ds-h6-font-size, $h-6) !default;
+
+/*=============================================
+    =          Headers Font Weights          =
+=============================================*/
+$h1-font-weight: var(--ds-h1-font-weight, $fw-black) !default;
+$h2-font-weight: var(--ds-h2-font-weight, $fw-bold) !default;
+$h3-font-weight: var(--ds-h3-font-weight, $fw-bold) !default;
+$h4-font-weight: var(--ds-h4-font-weight, $fw-bold) !default;
+$h5-font-weight: var(--ds-h5-font-weight, $fw-bold) !default;
+$h6-font-weight: var(--ds-h6-font-weight, $fw-bold) !default;

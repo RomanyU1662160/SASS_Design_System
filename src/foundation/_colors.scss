@@ -1,0 +1,555 @@
+@import "./variables";
+
+/**
+This file contains all the colors for elements such forms , buttons, links, etc.
+using the variables defined in _variables.scss
+* @author  Romany Sefen
+* @version 1.0
+
+*/
+
+/*=============================================
+=            Table of Contents           =
+=============================================*/
+/*----------  Global Text Colors  ----------*/
+/*----------  Buttons Colors  ----------*/
+/*----------  Forms Colors----------*/
+/*----------  Headers Colors----------*/
+
+/*=====  End of Table of Contents  ======*/
+
+// adding "!" to the comment to view it in the css output and the comprised css code
+/* !@rds = Romany Sefen Design System */
+$ds: "rds"; // Romany Sefen Design System
+
+/*=============================================
+=            Global text colors           =
+=============================================*/
+// if user defined the variable --ds-success-text-color, use it.
+//otherwise use otherwise use $success as default value.
+$success-text-color: var(--ds-success-text-color, $success) !default;
+$warning-text-color: var(--ds-warning-text-color, $warning) !default;
+$error-text-color: var(--ds-error-text-color, $danger) !default;
+$body-text-color: var(--ds-body-text-color, $gray-dark) !default;
+$body-bg-color: var(--ds-body-bg-color, $white) !default;
+$body-link-color: var(--ds-body-link-color, $blue) !default;
+$body-link-hover-color: var(--ds-body-link-hover-color, $blue) !default;
+$body-link-visited-color: var(
+  --ds-body-link-visited-color,
+  $blue-dark
+) !default;
+$body-link-active-color: var(--ds-body-link-active-color, $blue-light) !default;
+$heading-text-color: var(--ds-heading-text-color, $gray-dark) !default;
+$light-text-color: var(--ds-light-text-color, $gray-light) !default;
+$dark-text-color: var(--ds-dark-text-color, $gray-dark) !default;
+
+/*=============================================
+    =            Buttons colors          =
+=============================================*/
+$btn-disabled-bg: var(--ds-btn-disabled-bg, $gray-light) !default;
+$btn-disabled-text-color: var(--ds-btn-disabled-text-color, $gray) !default;
+$btn-disabled-border-color: var(
+  --ds-btn-disabled-border-color,
+  $gray-light
+) !default;
+
+/* Button Link */
+$btn-link-bg: var(--ds-btn-link-bg, $info) !default;
+$btn-link-text-color: var(--ds-tn-link-text-color, $white) !default;
+$btn-link-border-color: var(--ds-btn-link-border-color, $info) !default;
+
+$btn-link-focus-border-color: var(
+  --ds-btn-link-focus-border-color,
+  $info
+) !default;
+
+$btn-link-hover-bg: var(--ds-btn-link-hover-bg, $info-dark) !default;
+$btn-link-hover-text-color: var(
+  --ds-btn-link-hover-text-color,
+  $white
+) !default;
+$btn-link-hover-border-color: var(
+  --ds-btn-link-hover-border-color,
+  $info-dark
+) !default;
+
+$btn-link-active-bg: var(--ds-btn-link-active-bg, $info-light) !default;
+$btn-link-active-text-color: var(
+  --ds-btn-link-active-text-color,
+  $white
+) !default;
+$btn-link-active-border-color: var(
+  --ds-btn-link-active-border-color,
+  $info-light
+) !default;
+
+$btn-link-visited-bg: var(--ds-btn-link-visited-bg, $info-dark) !default;
+$btn-link-visited-text-color: var(
+  --ds-btn-link-visited-text-color,
+  $white
+) !default;
+$btn-link-visited-border-color: var(
+  --ds-btn-link-visited-border-color,
+  $info-dark
+) !default;
+
+/* Button Primary */
+$btn-primary-bg: var(--ds-btn-primary-bg, $primary) !default;
+$btn-primary-text-color: var(--ds-tn-primary-text-color, $white) !default;
+$btn-primary-border-color: var(
+  --ds-btn-primary-border-color,
+  $primary
+) !default;
+
+$btn-primary-focus-border-color: var(
+  --ds-btn-primary-focus-border-color,
+  $primary
+) !default;
+
+$btn-primary-hover-bg: var(--ds-btn-primary-hover-bg, $primary-dark) !default;
+$btn-primary-hover-text-color: var(
+  --ds-btn-primary-hover-text-color,
+  $white
+) !default;
+$btn-primary-hover-border-color: var(
+  --ds-btn-primary-hover-border-color,
+  $primary-dark
+) !default;
+
+$btn-primary-active-bg: var(
+  --ds-btn-primary-active-bg,
+  $primary-light
+) !default;
+$btn-primary-active-text-color: var(
+  --ds-btn-primary-active-text-color,
+  $white
+) !default;
+$btn-primary-active-border-color: var(
+  --ds-btn-primary-active-border-color,
+  $primary-light
+) !default;
+
+$btn-primary-visited-bg: var(
+  --ds-btn-primary-visited-bg,
+  $primary-dark
+) !default;
+$btn-primary-visited-text-color: var(
+  --ds-btn-primary-visited-text-color,
+  $white
+) !default;
+$btn-primary-visited-border-color: var(
+  --ds-btn-primary-visited-border-color,
+  $primary-dark
+) !default;
+
+/* Button Secondary */
+$btn-secondary-bg: var(--ds-btn-secondary-bg, $secondary) !default;
+$btn-secondary-text-color: var(--ds-tn-secondary-text-color, $white) !default;
+$btn-secondary-border-color: var(
+  --ds-btn-secondary-border-color,
+  $secondary
+) !default;
+
+$btn-secondary-focus-border-color: var(
+  --ds-btn-secondary-focus-border-color,
+  $secondary
+) !default;
+
+$btn-secondary-hover-bg: var(
+  --ds-btn-secondary-hover-bg,
+  $secondary-dark
+) !default;
+$btn-secondary-hover-text-color: var(
+  --ds-btn-secondary-hover-text-color,
+  $white
+) !default;
+$btn-secondary-hover-border-color: var(
+  --ds-btn-secondary-hover-border-color,
+  $secondary-dark
+) !default;
+
+$btn-secondary-active-bg: var(
+  --ds-btn-secondary-active-bg,
+  $secondary-light
+) !default;
+$btn-secondary-active-text-color: var(
+  --ds-btn-secondary-active-text-color,
+  $white
+) !default;
+$btn-secondary-active-border-color: var(
+  --ds-btn-secondary-active-border-color,
+  $secondary-light
+) !default;
+
+$btn-secondary-visited-bg: var(
+  --ds-btn-secondary-visited-bg,
+  $secondary-dark
+) !default;
+$btn-secondary-visited-text-color: var(
+  --ds-btn-secondary-visited-text-color,
+  $white
+) !default;
+$btn-secondary-visited-border-color: var(
+  --ds-btn-secondary-visited-border-color,
+  $secondary-dark
+) !default;
+
+/* Button Success */
+$btn-success-bg: var(--ds-btn-success-bg, $success) !default;
+$btn-success-text-color: var(--ds-tn-success-text-color, $white) !default;
+$btn-success-border-color: var(
+  --ds-btn-success-border-color,
+  $success
+) !default;
+
+$btn-success-focus-border-color: var(
+  --ds-btn-success-focus-border-color,
+  $success
+) !default;
+
+$btn-success-hover-bg: var(--ds-btn-success-hover-bg, $success-dark) !default;
+$btn-success-hover-text-color: var(
+  --ds-btn-success-hover-text-color,
+  $white
+) !default;
+$btn-success-hover-border-color: var(
+  --ds-btn-success-hover-border-color,
+  $success-dark
+) !default;
+
+$btn-success-active-bg: var(
+  --ds-btn-success-active-bg,
+  $success-light
+) !default;
+$btn-success-active-text-color: var(
+  --ds-btn-success-active-text-color,
+  $white
+) !default;
+$btn-success-active-border-color: var(
+  --ds-btn-success-active-border-color,
+  $success-light
+) !default;
+
+$btn-success-visited-bg: var(
+  --ds-btn-success-visited-bg,
+  $success-dark
+) !default;
+$btn-success-visited-text-color: var(
+  --ds-btn-success-visited-text-color,
+  $white
+) !default;
+$btn-success-visited-border-color: var(
+  --ds-btn-success-visited-border-color,
+  $success-dark
+) !default;
+
+/* Button Danger */
+$btn-danger-bg: var(--ds-btn-danger-bg, $danger) !default;
+$btn-danger-text-color: var(--ds-tn-danger-text-color, $white) !default;
+$btn-danger-border-color: var(--ds-btn-danger-border-color, $danger) !default;
+
+$btn-danger-focus-border-color: var(
+  --ds-btn-danger-focus-border-color,
+  $danger
+) !default;
+
+$btn-danger-hover-bg: var(--ds-btn-danger-hover-bg, $danger-dark) !default;
+$btn-danger-hover-text-color: var(
+  --ds-btn-danger-hover-text-color,
+  $white
+) !default;
+$btn-danger-hover-border-color: var(
+  --ds-btn-danger-hover-border-color,
+  $danger-dark
+) !default;
+
+$btn-danger-active-bg: var(--ds-btn-danger-active-bg, $danger-light) !default;
+$btn-danger-active-text-color: var(
+  --ds-btn-danger-active-text-color,
+  $white
+) !default;
+$btn-danger-active-border-color: var(
+  --ds-btn-danger-active-border-color,
+  $danger-light
+) !default;
+
+$btn-danger-visited-bg: var(--ds-btn-danger-visited-bg, $danger-dark) !default;
+$btn-danger-visited-text-color: var(
+  --ds-btn-danger-visited-text-color,
+  $white
+) !default;
+$btn-danger-visited-border-color: var(
+  --ds-btn-danger-visited-border-color,
+  $danger-dark
+) !default;
+
+/* Button Warning */
+$btn-warning-bg: var(--ds-btn-warning-bg, $warning) !default;
+$btn-warning-text-color: var(--ds-tn-warning-text-color, $white) !default;
+$btn-warning-border-color: var(
+  --ds-btn-warning-border-color,
+  $warning
+) !default;
+
+$btn-warning-focus-border-color: var(
+  --ds-btn-warning-focus-border-color,
+  $warning
+) !default;
+
+$btn-warning-hover-bg: var(--ds-btn-warning-hover-bg, $warning-dark) !default;
+$btn-warning-hover-text-color: var(
+  --ds-btn-warning-hover-text-color,
+  $white
+) !default;
+$btn-warning-hover-border-color: var(
+  --ds-btn-warning-hover-border-color,
+  $warning-dark
+) !default;
+
+$btn-warning-active-bg: var(
+  --ds-btn-warning-active-bg,
+  $warning-light
+) !default;
+$btn-warning-active-text-color: var(
+  --ds-btn-warning-active-text-color,
+  $white
+) !default;
+$btn-warning-active-border-color: var(
+  --ds-btn-warning-active-border-color,
+  $warning-light
+) !default;
+
+$btn-warning-visited-bg: var(
+  --ds-btn-warning-visited-bg,
+  $warning-dark
+) !default;
+$btn-warning-visited-text-color: var(
+  --ds-btn-warning-visited-text-color,
+  $white
+) !default;
+$btn-warning-visited-border-color: var(
+  --ds-btn-warning-visited-border-color,
+  $warning-dark
+) !default;
+
+/* Button Info */
+$btn-info-bg: var(--ds-btn-info-bg, $info) !default;
+$btn-info-text-color: var(--ds-tn-info-text-color, $white) !default;
+$btn-info-border-color: var(--ds-btn-info-border-color, $info) !default;
+
+$btn-info-focus-border-color: var(
+  --ds-btn-info-focus-border-color,
+  $info
+) !default;
+
+$btn-info-hover-bg: var(--ds-btn-info-hover-bg, $info-dark) !default;
+$btn-info-hover-text-color: var(
+  --ds-btn-info-hover-text-color,
+  $white
+) !default;
+$btn-info-hover-border-color: var(
+  --ds-btn-info-hover-border-color,
+  $info-dark
+) !default;
+
+$btn-info-active-bg: var(--ds-btn-info-active-bg, $info-light) !default;
+$btn-info-active-text-color: var(
+  --ds-btn-info-active-text-color,
+  $white
+) !default;
+$btn-info-active-border-color: var(
+  --ds-btn-info-active-border-color,
+  $info-light
+) !default;
+
+$btn-info-visited-bg: var(--ds-btn-info-visited-bg, $info-dark) !default;
+$btn-info-visited-text-color: var(
+  --ds-btn-info-visited-text-color,
+  $white
+) !default;
+$btn-info-visited-border-color: var(
+  --ds-btn-info-visited-border-color,
+  $info-dark
+) !default;
+
+/* Button Dark*/
+
+$btn-dark-bg: var(--ds-btn-dark-bg, $dark) !default;
+$btn-dark-text-color: var(--ds-tn-dark-text-color, $white) !default;
+$btn-dark-border-color: var(--ds-btn-dark-border-color, $dark) !default;
+
+$btn-dark-focus-border-color: var(
+  --ds-btn-dark-focus-border-color,
+  $dark
+) !default;
+
+$btn-dark-hover-bg: var(--ds-btn-dark-hover-bg, $dark-dark) !default;
+$btn-dark-hover-text-color: var(
+  --ds-btn-dark-hover-text-color,
+  $white
+) !default;
+$btn-dark-hover-border-color: var(
+  --ds-btn-dark-hover-border-color,
+  $dark-dark
+) !default;
+
+$btn-dark-active-bg: var(--ds-btn-dark-active-bg, $dark-light) !default;
+$btn-dark-active-text-color: var(
+  --ds-btn-dark-active-text-color,
+  $white
+) !default;
+$btn-dark-active-border-color: var(
+  --ds-btn-dark-active-border-color,
+  $dark-light
+) !default;
+
+$btn-dark-visited-bg: var(--ds-btn-dark-visited-bg, $dark-dark) !default;
+$btn-dark-visited-text-color: var(
+  --ds-btn-dark-visited-text-color,
+  $white
+) !default;
+$btn-dark-visited-border-color: var(
+  --ds-btn-dark-visited-border-color,
+  $dark-dark
+) !default;
+
+/*=============================================
+     =            Forms Colors           =
+=============================================*/
+$form-text-color: var(--ds-form-text-color, $gray-dark) !default;
+$form-text-color-disabled: var(
+  --ds-form-text-color-disabled,
+  $gray-light
+) !default;
+$form-text-color-focus: var(--ds-form-text-color-focus, $gray-dark) !default;
+
+$form-text-color-placeholder: var(
+  --ds-form-text-color-placeholder,
+  $gray-light
+) !default;
+$form-text-color-focus-placeholder: var(
+  --ds-form-text-color-focus-placeholder,
+  $gray-light
+) !default;
+$form-text-color-focus-disabled: var(
+  --ds-form-text-color-focus-disabled,
+  $gray-light
+) !default;
+
+$form-bg-color: var(--ds-form-bg-color, $white) !default;
+$form-bg-color-focus: var(--ds-form-bg-color-focus, $white) !default;
+$form-bg-color-disabled: var(
+  --ds-form-bg-color-disabled,
+  $gray-lighter
+) !default;
+
+$form-border-color: var(--ds-form-border-color, $gray-light) !default;
+$form-border-color-focus: var(--ds-form-border-color-focus, $primary) !default;
+$form-border-color-disabled: var(
+  --ds-form-border-color-disabled,
+  $gray-light
+) !default;
+
+$form-error-color: var(--ds-form-error-color, $danger) !default;
+$form-error-bg-color: var(--ds-form-error-bg-color, $danger-light) !default;
+$form-error-border-color: var(--ds-form-error-border-color, $danger) !default;
+
+$form-success-color: var(--ds-form-success-color, $success) !default;
+$form-success-bg-color: var(
+  --ds-form-success-bg-color,
+  $success-light
+) !default;
+$form-success-border-color: var(
+  --ds-form-success-border-color,
+  $success
+) !default;
+
+$form-warning-color: var(--ds-form-warning-color, $warning) !default;
+$form-warning-bg-color: var(
+  --ds-form-warning-bg-color,
+  $warning-light
+) !default;
+$form-warning-border-color: var(
+  --ds-form-warning-border-color,
+  $warning
+) !default;
+
+$form-info-color: var(--ds-form-info-color, $info) !default;
+$form-info-bg-color: var(--ds-form-info-bg-color, $info-light) !default;
+$form-info-border-color: var(--ds-form-info-border-color, $info) !default;
+
+$form-input-height: var(--ds-form-input-height, 2.5rem) !default;
+$form-input-padding: var(--ds-form-input-padding, 0.375rem 0.75rem) !default;
+$form-input-border-radius: var(--ds-form-input-border-radius, 0.25rem) !default;
+$form-input-border-width: var(--ds-form-input-border-width, 1px) !default;
+$form-input-border-style: var(--ds-form-input-border-style, solid) !default;
+
+$form-input-box-shadow: var(
+  --ds-form-input-box-shadow,
+  inset 0 1px 1px rgba($black, 0.075)
+) !default;
+$form-input-box-shadow-focus: var(
+  --ds-form-input-box-shadow-focus,
+  0 0 0 0.2rem rgba($primary, 0.25)
+) !default;
+$form-input-box-shadow-focus-link: var(
+  --ds-form-input-box-shadow-focus-link,
+  0 0 0 0.2rem rgba($blue, 0.25)
+) !default;
+$form-input-box-shadow-disabled: var(
+  --ds-form-input-box-shadow-disabled,
+  none
+) !default;
+
+$form-input-transition: var(
+  --ds-form-input-transition,
+  border-color 0.15s ease-in-out,
+  box-shadow 0.15s ease-in-out
+) !default;
+
+/*=============================================
+=            Headings Colors            =
+=============================================*/
+$h6-bg-color: var(--ds-h6-color, $primary) !default;
+$h6-text-color: var(--ds-h6-revert-color, $white) !default;
+$h6-revert-bg--color: var(--ds-h6-revert-bg-color, $white) !default;
+$h6-revert-text-color: var(--ds-h6-revert-text-color, $primary) !default;
+
+$h5-bg-color: var(--ds-h5-color, $primary) !default;
+$h5-text-color: var(--ds-h5-revert-color, $white) !default;
+$h5-revert-bg-color: var(--ds-h5-revert-bg-color, $white) !default;
+$h5-revert-text-color: var(--ds-h5-revert-text-color, $primary) !default;
+
+$h4-bg-color: var(--ds-h4-color, $primary) !default;
+$h4-text-color: var(--ds-h4-revert-color, $white) !default;
+$h4-revert-bg-color: var(--ds-h4-revert-bg-color, $white) !default;
+$h4-revert-text-color: var(--ds-h5-revert-text-color, $primary) !default;
+
+$h3-bg-color: var(--ds-h3-color, $primary) !default;
+$h3-text-color: var(--ds-h3-revert-color, $white) !default;
+$h3-revert-bg-color: var(--ds-h3-revert-bg-color, $white) !default;
+$h3-revert-text-color: var(--ds-h3-revert-text-color, $primary) !default;
+
+$h2-bg-color: var(--ds-h2-color, $primary) !default;
+$h2-text-color: var(--ds-h2-revert-color, $white) !default;
+$h2-revert-bg-color: var(--ds-h2-revert-bg-color, $white) !default;
+$h2-revert-text-color: var(--ds-h2-revert-text-color, $primary) !default;
+
+$h1-bg-color: var(--ds-h1-color, $primary) !default;
+$h1-text-color: var(--ds-h1-revert-color, $white) !default;
+$h1-revert-bg-color: var(--ds-h1-revert-bg-color, $white) !default;
+$h1-revert-text-color: var(--ds-h1-revert-text-color, $primary) !default;
+
+/*=============================================
+    =            Icons  Colors           =
+=============================================*/
+
+$icon-favorite-color: var(--ds-icon-favorite-color, $primary) !default;
+$icon-favorite-color-hover: var(
+  --ds-icon-favorite-color-hover,
+  $blue-light
+) !default;
+$icon-favorite-color-disabled: var(
+  --ds-icon-favorite-color-disabled,
+  $gray-light
+) !default;

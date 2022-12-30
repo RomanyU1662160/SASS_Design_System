@@ -1,0 +1,63 @@
+@import "../variables";
+
+/*=============================================
+=            Break points and screen sizes            =
+=============================================*/
+
+/**
+ *
+ * This file will contain setting for various break points and media 
+ *
+ */
+
+/*=====  End of Break points and screen sizes  ======*/
+
+//*  use mixin for breakpoints by @include mixinName{ ... css content}
+
+/**
+* example of usage
+* @include device("tablet) {
+*   // css content
+}
+*/
+
+@mixin device($deviceName) {
+  @if map-has-key($devices, $deviceName) {
+    @media (min-width: map-get($devices, $deviceName)) {
+      @content;
+    }
+  } @else {
+    @error 'No #{$deviceName} device found in $devices map.';
+  }
+}
+
+/**
+ *Example
+ * .body{
+font-size:16px;
+
+@include tablet{
+    font-size: 18px;
+}
+
+ }
+ *
+ */
+
+@mixin mobile {
+  @media only screen and (max-width: map-get($breakpoints, "sm")) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media only screen and (min-width: map-get($breakpoints, "md")) and (max-width: map-get($breakpoints, "lg")) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media only screen and (min-width: map-get($breakpoints, "lg")) {
+    @content;
+  }
+}
